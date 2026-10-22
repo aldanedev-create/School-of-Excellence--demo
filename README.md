@@ -1,6 +1,4 @@
-## 📁 File: `README.md`
 
-```markdown
 # School of Excellence — Demo Website
 
 A static multi-page demo website for **School of Excellence**, Kingston, Jamaica — built by **Codeplex Services** to pitch a production website to the principal.
