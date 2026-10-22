@@ -1,0 +1,151 @@
+/* Page-specific styles */
+
+/* Page hero (inner pages) */
+.page-hero {
+  background: linear-gradient(115deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: #fff;
+  padding: 64px 0 56px;
+  text-align: center;
+}
+.page-hero h1 { color: #fff; font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 12px; }
+.page-hero p { color: rgba(255,255,255,0.82); max-width: 620px; margin: 0 auto; }
+
+/* Filter bar */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.filter-btn {
+  padding: 9px 20px;
+  border-radius: 100px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.filter-btn:hover { border-color: var(--color-secondary); }
+.filter-btn.active {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+/* Fee table */
+.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+.fee-table th, .fee-table td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.94rem;
+}
+.fee-table th { background: var(--color-primary); color: #fff; font-weight: 600; }
+.fee-table tr:last-child td { border-bottom: none; }
+.fee-table .amount { font-weight: 700; color: var(--color-primary); }
+
+/* Contact */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 40px;
+}
+.contact-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
+  padding: 34px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-border);
+}
+.contact-card h3 { font-size: 1.15rem; margin-bottom: 20px; }
+.contact-item {
+  display: flex;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.contact-item:last-child { border-bottom: none; }
+.contact-item .ic { font-size: 1.3rem; }
+.contact-item strong { display: block; font-size: 0.85rem; color: var(--color-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.contact-item a, .contact-item span { font-size: 0.98rem; font-weight: 600; color: var(--color-primary); }
+.contact-item a:hover { color: var(--color-secondary-dark); }
+
+/* Form */
+.form-group { margin-bottom: 20px; }
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 7px;
+  color: var(--color-primary);
+}
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.94rem;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: border-color 0.2s;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-secondary);
+  background: #fff;
+}
+.form-group textarea { resize: vertical; min-height: 110px; }
+.form-notice {
+  display: none;
+  background: #ecfdf5;
+  border-left: 4px solid #10b981;
+  color: #065f46;
+  padding: 14px 18px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  margin-top: 18px;
+}
+.form-notice.show { display: block; }
+
+/* Steps */
+.steps { display: flex; flex-direction: column; gap: 22px; }
+.step {
+  display: flex;
+  gap: 20px;
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
+  padding: 26px;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+}
+.step-num {
+  flex: 0 0 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  color: var(--color-primary-dark);
+  font-weight: 800;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step h3 { font-size: 1.05rem; margin-bottom: 6px; }
+.step p { color: var(--color-muted); font-size: 0.92rem; }
+
+@media (max-width: 760px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .fee-table th, .fee-table td { padding: 12px 14px; font-size: 0.86rem; }
+}

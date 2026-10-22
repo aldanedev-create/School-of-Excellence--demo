@@ -1,0 +1,25 @@
+/* PROVISIONAL DEMO BRANDING — not the school's verified colours */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap");
+
+:root {
+  --color-primary: #173653;
+  --color-primary-dark: #0f2438;
+  --color-secondary: #D4A64A;
+  --color-secondary-dark: #b8892f;
+  --color-background: #F7F8FA;
+  --color-surface: #FFFFFF;
+  --color-text: #172333;
+  --color-muted: #64748B;
+  --color-border: #E2E8F0;
+
+  --font-heading: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --container-width: 1200px;
+  --header-height: 76px;
+  --section-space: 80px;
+  --radius-card: 16px;
+  --radius-button: 8px;
+  --shadow-card: 0 12px 35px rgb(23 54 83 / 8%);
+  --shadow-hover: 0 18px 45px rgb(23 54 83 / 14%);
+}
